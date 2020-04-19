@@ -9,3 +9,7 @@ import pytest
 ])
 def test_add(x, y, result):
     assert add(x, y) == result
+
+# run all test of folder .
+if __name__ == '__main__':
+    pytest.main(["-x", ".", "-vv"])
