@@ -1,15 +1,4 @@
-image:
-  file: .gitpod.Dockerfile
-
-# This will expose all necessary ports needed for your VNC image
-ports:
-  - port: 6080
-    onOpen: open-preview
-  - port: 5900
-    onOpen: ignore
-  - port: 35900
-    onOpen: ignore
-
-# This will make it so that on workspace start it will run a file called `app.py`
 tasks:
-  - command: python3 app.py
+  - init: echo "Replace me with a build script for the project."
+    command: echo "Replace me with something that should run on every start, or just
+      remove me entirely."
