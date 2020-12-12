@@ -13,7 +13,7 @@ class Computer:
     def changeCode(self,lineNr,instruction):
         newLine = (instruction,self.program[lineNr][1])
         self.program[lineNr]=newLine
-    def changeArgument(self,line,arg):
+    def changeArgument(self,lineNr,arg):
         newLine = (self.program[lineNr][0],arg)
         self.program[lineNr]=newLine
     def compile(self,data):
